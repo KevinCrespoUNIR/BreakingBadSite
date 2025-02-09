@@ -1,0 +1,242 @@
+
+@font-face {
+    font-family: 'miFuente';
+    src: url('Breaking-Bad.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+
+:root{
+    --fuente: 'miFuente', 'Helvética';
+
+}
+
+body{
+    background-image: url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+/* TABLA */
+.body-tabla{ /* Color de fondo de Tabla.html */
+    background: #0c3e11;
+    
+}
+
+#cabecera{
+    text-align: center;
+}
+
+.tabla{
+    background-color:black;
+    color: rgb(0, 0, 0); 
+    margin:auto;
+    text-align: center;
+    width: 75em; /* Medida en em para que no
+                 se deforme al hacer zoom en 
+                 el navegador */
+
+    /* table-layout: fixed; hace que las 
+    columnas de la tabla tengan un ancho fijo.
+    En este caso; width:50% */
+    table-layout: fixed;
+    
+}
+
+.tabla tr td{
+    padding: 0px 0px;
+    border:solid rgb(0, 0, 0) 5px;
+    
+    width:70px;
+    height: 70px;
+    
+}
+
+/* FUENTE DE LAS TABLAS */
+table tr td{ /* Fuente de todas las tablas */
+    font-family:Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+table tr td p{
+    font-size: 10px;
+}
+/* ---------- */
+
+#hank img{
+    /* position:relative permite mover elementos
+    con precisión sin alterar al diseño general */
+    position:relative;
+    top: 8px;
+
+    /* Ajustando la imagen al contenedor evitando
+    transformaciones en el resto de celdas*/
+    width: 100%;
+    max-height: 150px;
+
+}
+
+
+
+.tabla-2{
+    background-color:black;
+    margin:auto;
+    margin-top: 20px;
+    text-align: center;
+
+    width: 50em;
+    table-layout: fixed;
+}
+
+
+.tabla-2 tr td{
+    background-color:#c3c629;
+    border: solid black 5px;
+    width:90px;
+   
+}
+/* ---------- */
+
+
+
+/* FUENTES */
+h3{
+    font-family: Helvetica, sans-serif;
+    font-family: var(--fuente);
+    color: white;
+    text-align:center;
+    padding-top:5px;
+    padding-bottom:20px;
+
+}
+/* ---------- */
+
+
+
+/* COLORES */
+.colorb8dc19{
+    background-color:#b8dc19;
+
+}
+
+.colorab8fcc{
+    background-color: #ab8fcc;
+}
+
+.coloreff7c7{
+    background-color: #eff7c7;
+}
+
+.colord4e783{
+    background-color: #d4e783;
+}
+
+.verde89a418 {
+    background-color: #89a418;
+}
+
+.verde627220{
+    background-color: #627220;
+}
+
+.verdec4e14e{
+    background-color:#c4e14e;
+}
+
+.verdebbc49e{
+    background-color: #bbc49e;
+}
+
+.verde818e4b{
+    background-color: #818e4b;
+}
+/* -------------------------------------- */
+
+/* IMÁGENES INDEX */
+.img-logo{
+    display:block;
+    margin:auto;
+    text-align:center;
+
+}
+
+.img-logo img{
+    width: 200px;
+    height: 200px;
+
+}
+
+#imagen-mapeada{
+    display:block;
+    margin:auto;
+    width:700px;
+    height:300px;
+    border: 10px outset brown;
+    border-radius: 22px;
+    
+}
+
+/* FORMULARIO */
+form{
+    display:block;
+    margin:auto;
+    margin-top: 30px;
+    height: auto;
+    width: 600px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    border-radius: 10px;
+    background: rgba(12, 62, 17, 0.4);
+    backdrop-filter: blur(15px); /* difuminado */
+    color:rgb(255, 206, 114);
+
+}
+
+form h2{
+    text-align:center;
+    padding-top: 15px;
+
+}
+
+.input{
+    /* Ajustando la posición de los inputs
+     para que queden alineados en el eje vertical */
+    position:absolute;
+    left:180px;
+}
+
+form textarea{
+    width:550px;
+    max-width: 550px;
+    height:60px;
+
+}
+
+form fieldset{
+   border-radius: 10px;
+   margin-bottom: 5px;
+
+}
+
+form #botones{
+    text-align:center;
+
+}
+
+form #botones input{
+    border-radius: 4px;
+    margin-bottom:5px;
+    margin-left:30px;
+    margin-right:30px;
+    padding:5px 20px 5px 20px;
+
+    display:inline-block;
+
+}
+/* ---------- */
+

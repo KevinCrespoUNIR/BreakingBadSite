@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css"/>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/icon.png" type="image x-icon"/>
+    <title>Breaking Bad</title>
+</head>
+
+    <body class="body">
+
+        <!-- Encabezado con logo-->
+        <header>
+            <div class="img-logo">
+                <img src="img/logo.PNG" alt="logo">
+            </div>
+        </header>
+        
+        <!-- Cuerpo con texto y poster -->
+        <section id="cuerpo">
+            <h3>
+                I did it for me. I liked it. I was good at it. And, I was really... 
+                I was alive.
+            </h3>
+        
+            <img src="img/poster.jpg" usemap="#breaking-map" id="imagen-mapeada">
+
+             <!-- MAPEADO -->
+            <map name="breaking-map">
+                <area shape="rect" coords="670,142,481,83"
+                href="Formulario.html"
+                target="_blank" title="formulario" alt="imagen-mapeada-form">
+
+                <area shape="rect" coords="541,143,645,201"
+                href="Tabla.html"
+                target="_blank" title="formulario" alt="imagen-mapeada-tabla">
+
+            </map>
+
+            <!-- Nota: -->
+            <!-- Pasos que he seguido para mapear la imagen redimensionada:-->
+            <!--
+            Paso 1: Cambiar el tamaño de la imagen original al tamaño 
+                    establecido en el css:
+                    poster.jpg: 1000x625 => width:700px, height:300px;
+
+                    https://www.adobe.com/es/express/feature/image/resize
+            
+            Paso 2: Sacar las coordenadas de la imagen redimensionada.
+
+                    https://www.image-map.net/
+
+            Paso 3: Poner las coordenadas de la imagen redimensionada en el html
+                    manteniendo la imagen original.
+            -->
+       </section>
+
+    </body>
+</html>

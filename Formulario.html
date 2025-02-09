@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css"/>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/icon.png" type="image x-icon"/>
+    <title>Br-Ba Formulario</title>
+</head>
+
+<body class="body">
+
+    <!-- Formulario -->
+    <form action="mailto:raul.rodriguez@proeducaglobal.com" method="post"
+     autocomplete="on" name="BreakingBad-form" target="_blank">
+        
+        <h2>Breaking Bad – ¡Que comience el juego!</h2>
+        
+        <fieldset> <!-- Agrupación de campos personales-->
+
+            <legend>Datos personales</legend>
+            Nombre*
+            <input type="text" placeholder="" required class="input">
+            <br><br>
+            
+            Apellidos*
+            <input type="text" placeholder="" required class="input">
+            <br><br>
+                    
+            DNI
+            <input type="text" placeholder="" class="input">
+            <br><br>
+                
+            Correo Electrónico*
+            <input type="email" placeholder="ejemplo@cristalazul.es"
+             required class="input">
+            <br><br>
+
+            Fecha de nacimiento
+            <input type="date" class="input">
+            <br><br>
+
+            <fieldset>  <!-- Agrupación de campos para el género -->
+                <legend>Selecciona tu género</legend>
+                <input type="radio" name="genero" value="Hombre" 
+                    checked required> Hombre <br>
+                <input type="radio" name="genero" value="mujer"> Mujer
+        
+            </fieldset>
+    
+            <fieldset>
+                <legend>Datos de dirección</legend>
+
+                Dirección postal
+                <input type="text" placeholder="Calle, Número, Piso"
+                 class="input">
+                <br><br>
+
+                Código postal
+                <input type="text" placeholder="" class="input">
+                <br><br>
+        
+                Ciudad
+                <input type="text" placeholder="" class="input">
+
+            </fieldset>
+
+        </fieldset> <!-- Cierre de campos personales -->
+
+        <fieldset>  <!-- Agrupación de campos para elección de personaje -->
+            <legend>Elige tu personaje</legend>
+            <select name="personaje">
+                <option value="Jessie">Jessie Pinkman</option>
+                <option value="W.W">Walter White</option>
+                <option value="Better_Call_Saul">Saul Goodman</option>
+                <option value="Gustavo">Gustavo Fring</option>
+                <option value="Pollos">Pollos Hermanos</option>
+                <option value="Otro">Otro personaje</option>
+            </select>
+
+        </fieldset>
+
+        <fieldset> <!-- Agrupación de campos para comentario -->
+            <legend>¿Por qué has elegido este personaje?</legend>
+            <textarea name="comentario" 
+            placeholder="Déjanos tu opinión aquí..."></textarea>
+
+        </fieldset>
+
+        <fieldset> <!-- Agrupación de campos para selección de archivo -->
+            <legend>Mándanos tu currículum</legend>
+            <input type="file" name="adjunto" accept=".pdf" multiple>
+        </fieldset>
+ 
+        <!-- Botones de envio y reset -->
+        <section id="botones">
+            <input type="submit" value="guardar"> 
+            <input type="reset" value="borrar">  
+        </section>
+        
+    </form>
+    
+</body>
+
+</html>
