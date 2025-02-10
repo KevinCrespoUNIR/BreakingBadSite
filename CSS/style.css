@@ -33,10 +33,12 @@ body{
     background-color:black;
     color: rgb(0, 0, 0); 
     margin:auto;
+    margin-top: 15px;
     text-align: center;
-    width: 75em; /* Medida en em para que no
+    width: 62em; /* Medida en em para que no
                  se deforme al hacer zoom en 
                  el navegador */
+    
 
     /* table-layout: fixed; hace que las 
     columnas de la tabla tengan un ancho fijo.
@@ -46,11 +48,10 @@ body{
 }
 
 .tabla tr td{
-    padding: 0px 0px;
     border:solid rgb(0, 0, 0) 5px;
     
-    width:70px;
-    height: 70px;
+    width:60px;
+    height: 65px;
     
 }
 
@@ -83,20 +84,27 @@ table tr td p{
 
 .tabla-2{
     background-color:black;
-    margin:auto;
-    margin-top: 20px;
     text-align: center;
+    margin:auto;
+    margin-top: 25px;
 
-    width: 50em;
-    table-layout: fixed;
 }
 
 
 .tabla-2 tr td{
     background-color:#c3c629;
     border: solid black 5px;
-    width:90px;
+    width:75px;
+    height:50px;
    
+}
+
+.tabla-2 tr td img{
+    width: 100%;
+    height: 100%;
+    /* Las imagenes se ajustan al
+    tamaño del contenedor */
+    object-fit: contain;
 }
 /* ---------- */
 
